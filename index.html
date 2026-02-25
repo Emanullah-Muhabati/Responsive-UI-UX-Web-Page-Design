@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive UI/UX Web page Design</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/anim.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav">
+          <div class="left-menu">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="right-menu">
+            <i class="fa-regular fa-user"></i>
+            <a href="#">Sign Up / Log In</a>
+          </div>
+        </div>
+      </nav>
+      <div class="images">
+        <div class="image" id="slide1">
+          <img src="./images/file 1.jpg" alt="" />
+          <span
+            >Where<br />
+            <b>WORDS</b><br />
+            Fail<br />
+            <b>MUSIC</b><br />
+            Speaks
+          </span>
+        </div>
+        <div class="image active" id="slide2">
+          <img src="./images/file 2.jpg" alt="" />
+          <span>
+            <b>MUSIC</b><br />
+            is<br />
+            the<br />
+            <b>UNIVERSAL</b><br />
+            Language<br />
+            of<br />
+            <b>MANKIND</b>
+          </span>
+        </div>
+        <div class="image" id="slide3">
+          <img src="./images/file 3.jpg" alt="" />
+          <span>
+            <b>MUSIC</b><br />
+            is<br />
+            The<br />
+            <b>ART</b><br />
+            of<br />
+            <b>SOUL</b>
+          </span>
+        </div>
+        <div class="image" id="slide4">
+          <img src="./images/file 4.jpg" alt="" />
+          <span>
+            Without <br />
+            <b>MUSIC</b><br />
+            Life<br />
+            would<br />
+            be<br />
+            a<br />
+            <b>MISTAKE</b>
+          </span>
+        </div>
+        <div class="change-slide">
+          <i onclick="changeSlide('slide1',1)" class="fa-solid fa-circle"></i>
+          <i onclick="changeSlide('slide2',2)" class="fa-solid fa-circle"></i>
+          <i onclick="changeSlide('slide3',3)" class="fa-solid fa-circle"></i>
+          <i onclick="changeSlide('slide4',4)" class="fa-solid fa-circle"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-2">
+        <div class="cards">
+          <div class="top">
+            <img src="./images/headset1.jpg" alt="" />
+            <span class="offer">HOT offer</span>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="bot">
+            <div class="right">
+              <h2>Wireless Headphones</h2>
+              <span class="price">$99.99</span>
+            </div>
+            <div class="left">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="top">
+            <img src="./images/headset2.jpg" alt="" />
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="bot">
+            <div class="right">
+              <h2>Wired Headphones</h2>
+              <span class="price">$105.99</span>
+            </div>
+            <div class="left">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="top">
+            <img src="./images/headset3.jpg" alt="" />
+            <span class="offer">HOT offer</span>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="bot">
+            <div class="right">
+              <h2>Wireless Headphones</h2>
+              <span class="price">$88.99</span>
+            </div>
+            <div class="left">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="top">
+            <img src="./images/headset4.jpg" alt="" />
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="bot">
+            <div class="right">
+              <h2>Wired Headphones</h2>
+              <span class="price">$75.99</span>
+            </div>
+            <div class="left">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="top">
+            <img src="./images/headset5.jpg" alt="" />
+            <span class="offer">HOT offer</span>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="bot">
+            <div class="right">
+              <h2>Wired Headphones</h2>
+              <span class="price">$65.99</span>
+            </div>
+            <div class="left">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="left-2">
+          <div class="left">
+            <img class="imag" src="./images/headset-offer-2.jpg" alt="" />
+            <img class="offer" src="./images/special-offer.png" alt="" />
+          </div>
+          <div class="middle">
+            <h2>Experience the Best Sound Quality</h2>
+            <span>
+              Discover our wide range of headphones designed to deliver<br />
+              exceptional sound quality and comfort. Whether you're a<br />
+              music lover, gamer, or professional, we have the perfect<br />
+              headphones for you.
+            </span>
+          </div>
+          <div class="right">
+            <span class="change-back">30% OFF</span>
+            <span class="change-color"><del>250$</del></span>
+            <span class="change-color">199.99$</span>
+            <span class="change-back">TIME LEFT</span>
+            <span class="time-left">23:59:00</span>
+            <button>Shop Now</button>
+          </div>
+        </div>
+        <div class="right-2">
+          <div class="left">
+            <img class="imag" src="./images/headset-offer.jpg" alt="" />
+            <img class="offer" src="./images/special-offer.png" alt="" />
+          </div>
+          <div class="middle">
+            <h2>Experience the Best Sound Quality</h2>
+            <span>
+              Discover our wide range of headphones designed to deliver<br />
+              exceptional sound quality and comfort. Whether you're a<br />
+              music lover, gamer, or professional, we have the perfect<br />
+              headphones for you.
+            </span>
+          </div>
+          <div class="right">
+            <span class="change-back">30% OFF</span>
+            <span class="change-color"><del>250$</del></span>
+            <span class="change-color">199.99$</span>
+            <span class="change-back">TIME LEFT</span>
+            <span class="time-left">23:59:00</span>
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-4">
+        <h2>Other Pruducts</h2>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other1.jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Hands-free</h2>
+                  <span class="price">$10.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other2.jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Hands-free</h2>
+                  <span class="price">$12.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other3.jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Air-pods</h2>
+                  <span class="price">$15.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other4.jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Air-pods</h2>
+                  <span class="price">$16.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other5.jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Hands-free</h2>
+                  <span class="price">$9.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other6.jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Hands-free</h2>
+                  <span class="price">$11.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other7.jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Air-pods</h2>
+                  <span class="price">$17.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other8.jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Air-pods</h2>
+                  <span class="price">$16.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other9.jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Kar-kit</h2>
+                  <span class="price">$19.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cards">
+              <div class="top">
+                <img src="./images/other10 .jpg" alt="" />
+                <span class="offer">HOT offer</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="bot">
+                <div class="right">
+                  <h2>Kar-kit</h2>
+                  <span class="price">$15.99</span>
+                </div>
+                <div class="left">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container-5">
+      <div class="left">
+        <h2>Subscribe to our Newsletter</h2>
+        <span>
+          Get 10% off your first order!<br />
+          Be the first to know about new arrivals, exclusive offers,<br />
+          and more.
+        </span>
+      </div>
+      <div class="right">
+        <input type="text" placeholder="Enter your email address" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <footer>
+      <span>© 2024 Music Store. All rights reserved.</span>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.2.2/jquery.mousewheel.min.js"
+      integrity="sha512-xVQ08GKxlfI2OdYe63zNcmSB9gj+xykxnLQl6Og/N30YcMe+WVs3Oxt1+MjGbhsDUnSCAblUWSkzEV/cCqTJQQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 1000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
